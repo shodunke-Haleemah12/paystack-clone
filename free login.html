@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create free login</title>
+    <link rel="stylesheet" href="./free login .css">
+</head>
+<body>
+
+    <div class="logo"> 
+        <img src="./img/logoss.svg" alt="">
+    </div>
+    <div class="container-all">
+    <div class="form-container">
+        <h1>CREATE YOUR ACCOUNT</h1>
+        <form action="/submit_form" method="post">
+            <!-- <label for="country">Country</label> -->
+            <!-- <label for="Other countries">Other countries</label> -->
+             <div class="countries"> 
+                <p>Country</p>
+                <p class="contain">Other Countries</p>
+             </div>
+            <select id="country" name="country">
+                <option value="nigeria">Nigeria</option>
+                <option value="nigeria">Ghana</option>
+                <option value="nigeria">Kenya</option>
+                <option value="nigeria">South Africa</option>
+                <option value="other">Other countries</option>
+            </select>
+            
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" name="businessName">
+            
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Phone Number</label>
+            <div class="phone-input">
+                <select id="countryCode" name="countryCode">
+                    <option class="opt" value="+234">+234</option>
+                </select>
+                <input class="num" type="tel" id="phone" name="phone" placeholder="802 123 4567">
+            </div>
+
+           
+                <div class="password-container"> 
+                    <input type="password" name="" id="input">
+                    <img onclick="showpassword()" id="eye" src="/eye icons.png" alt="">
+                </div>
+            
+            <button class="btn" type="submit">Create My Account</button>
+            <div class="radio-group">
+                <p>What type of business do you own?</p>
+                <label class="ll">
+                    <input type="radio" name="businessType" value="starter" required>
+                    <p>Starter Business</p>
+                    <span class="description">I'm testing my ideas with real customers, and preparing to register my company</span>
+                </label>
+                <label class="ll">
+                    <input type="radio" name="businessType" value="registered" required>
+                    Registered Business
+                    <span class="description">My business has the approval, documentation, and licences required to operate legally</span>
+                </label>
+            </div>
+
+            <div class="radio-group">
+                <p>Are you a software developer?</p>
+                <label>
+                    <input type="radio" name="developer" value="yes" required>
+                    Yes, I am
+                </label>
+                <label>
+                    <input type="radio" name="developer" value="no" required>
+                    No, I'm not
+                </label>
+            </div>
+
+            <button type="submit">Create My Account</button>
+
+            <p class="terms">
+                By clicking the “Create your account” button, you agree to Paystack’s <a href="#">terms of acceptable use</a> and <a href="#">Data Processing Agreement</a>.
+            </p>
+            <p class="privacy">
+                To learn more about how Paystack collects, uses and discloses your personal data, please read our <a href="#">Privacy Policy</a>.
+            </p>
+        </form>
+    </div>
+        </form>
+    </div>
+    <p class="login">
+        Already have an account? <a href="#">Login</a>
+    </p>
+
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
